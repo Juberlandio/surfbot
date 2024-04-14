@@ -25,6 +25,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 .cabecalho .menu li img{
 padding: 18px 15px;

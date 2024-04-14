@@ -3,6 +3,7 @@
 
 /* home */
 @import "./home/header.css";
+@import "./home/introducao.css";
 
 /* Utilidades */
 @import "./utilidades/cores.css";

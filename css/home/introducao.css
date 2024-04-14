@@ -1,0 +1,13 @@
+.introducao {
+height: 400px;
+width: 100%;
+background-image: url('/assents/img/intro.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.introducao h1 {
+position: absolute;
+top: 35%;
+left: 2.5%;
+}
