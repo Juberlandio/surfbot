@@ -1,3 +1,48 @@
-.cabecalho-bg {
-  background: var(--cor-13);
+.header-container {
+background: var(--cor-p9);
+}
+.menu-topo {
+background: var(--cor-p2);
+}
+.menu-topo h2{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+align-items: center;
+height: 30px;
+}
+.cabecalho {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+width: 100%;
+}
+.cabecalho .menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.cabecalho .menu li{
+padding: 18px 5px;
+}
+.cabecalho .menu li a{
+padding: 18px 15px;
+}
+@media (max-width: 680px) {
+.cabecalho {
+justify-content: center;
+height: auto;
+}
+.menu-topo h2{
+height: auto;
+padding: 5px;
+}
+.cabecalho {
+height: auto;
+padding: 5px;
+}
 }
