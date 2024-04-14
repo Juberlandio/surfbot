@@ -26,11 +26,24 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 }
-.cabecalho .menu li{
-padding: 18px 5px;
+.cabecalho .menu li img{
+padding: 18px 15px;
 }
 .cabecalho .menu li a{
-padding: 18px 15px;
+padding: 18px 0px;
+}
+.matricula {
+  position: relative;
+}
+.matricula:after {
+content: "";
+width: 100%;
+height: 3px;
+background: var(--cor-p12);
+display: block; 
+margin-top: 0px;
+transition: 0.3s;
+position: absolute; /* Realinhando ao centro */
 }
 @media (max-width: 680px) {
 .cabecalho {
