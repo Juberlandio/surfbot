@@ -5,9 +5,79 @@ background-image: url('/assents/img/intro.jpg');
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
+max-width: 100%;
 }
-.introducao h1 {
-position: absolute;
-top: 35%;
-left: 2.5%;
+.introducao-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: end;
+padding-bottom: 100px;
+max-width: 1860px;
+padding-left: 20px;
+padding-right: 20px;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+height: 400px;
+}
+.introducao-container h1 {
+line-height: 0.83;
+}
+.newsletter-form {
+place-self: end;
+}
+.newsletter-form .nome {
+border-radius: 5px;
+padding: 0px 0px 0px 20px;
+width: 471px;
+height: 48px;
+border: 0px;
+margin: 0px;
+}
+.newsletter-form ul {
+display: inline-block;
+}
+.item-introducao {
+background: var(--cor-11);
+width: 186px;
+height: 48px;
+background: var(--cor-p12);
+border-radius: 0px 5px 5px 0px;
+margin-left: -190px;
+z-index: 3;
+transition: 0.3s;
+}
+.item-introducao:hover {
+opacity: 1;
+background-color: var(--cor-p2);
+transform: scale(1.1);
+}
+.item-introducao a {
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50px;
+}
+.item-introducao img {
+margin-left: 40px;
+}
+@media (max-width: 600px) {
+.introducao-container h1 {
+font-size: 3rem;
+}
+.newsletter-form .nome {
+width: 100%;
+height: 48px;
+}
+.item-introducao {
+max-width: 146px;
+height: 48px;
+margin-left: -150px;
+}
+.item-introducao img {
+margin-left: 10px;
+}
 }
