@@ -1,0 +1,85 @@
+.sobre {
+display: flex;
+flex-wrap: nowrap;
+gap: 130px;
+justify-content: space-between;
+align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sobre picture .imagem-0 {
+max-width: 570px;
+height: 671px;
+object-fit: cover;
+margin-top: 60px;
+}
+.sobre picture .imagem-1 {
+max-width: 540px;
+height: 240px;
+object-fit: cover;
+margin-top: -100px;
+padding-bottom: 40px;
+}
+
+.sobre-aulas h1 {
+max-width: 454px;
+padding-bottom: 40px;
+margin-top: 60px;
+}
+.icones {
+display: flex;
+flex-wrap: wrap;
+gap: 21px;
+justify-content: flex-start;
+align-items: center;
+padding: 20px 0px 20px 0px;
+width: 470px;
+border-top: 2px solid var(--cor-p4);
+}
+.icones:last-child {
+border-bottom: 2px solid var(--cor-p4);
+}
+.sobre-aulas .paragrafos {
+padding-top: 30px;
+max-width: 470px;
+}
+.sobre-aulas .paragrafos P + p{
+padding-top: 30px;
+}
+.sobre .rotas h2 {
+padding-bottom: 13px;
+padding-left: 15px;
+font-weight: bold;
+}
+.sobre .rotas p + p {
+padding-top: 9px;
+}
+.sobre .rotas p {
+padding-left: 15px;
+}
+.sobre .rotas span {
+padding-right: 5px;
+font-weight: bold;
+}
+.sobre .rotas h2::before {
+display: inline-block;
+content: '';
+width: 6px;
+height: 6px;
+background: var(--cor-0);
+border-radius: 50%;
+margin-right: 4px;
+border: 2px solid var(--cor-p10);
+}
+.sobre .rotas span::before {
+display: inline-block;
+content: '';
+width: 10px;
+height: 2px;
+background: var(--cor-p2);
+margin-right: 4px;
+margin: 4px;
+}
+
+
