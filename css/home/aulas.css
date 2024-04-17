@@ -1,0 +1,31 @@
+.aulas-bg {
+background: var(--cor-p4);
+}
+.aulas {
+padding-top: 63px;
+padding-bottom: 23px;
+}
+.item-aulas {
+width: 230px;
+height: 40px;
+background: var(--cor-p8);
+border-radius: 5px;
+z-index: 3;
+transition: 0.3s;
+}
+.item-aulas:hover {
+opacity: 1;
+background-color: var(--cor-p2);
+transform: scale(1.1);
+}
+.item-aulas a {
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 40px;
+}
+.item-aulas img {
+  margin-left: 80px;
+  }
