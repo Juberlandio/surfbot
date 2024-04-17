@@ -7,12 +7,13 @@ align-items: center;
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 60px;
+margin-bottom: 90px;
 }
 .sobre picture .imagem-0 {
 max-width: 570px;
 height: 671px;
 object-fit: cover;
-margin-top: 60px;
 }
 .sobre picture .imagem-1 {
 max-width: 540px;
@@ -25,7 +26,6 @@ padding-bottom: 40px;
 .sobre-aulas h1 {
 max-width: 454px;
 padding-bottom: 40px;
-margin-top: 60px;
 }
 .icones {
 display: flex;
@@ -44,7 +44,7 @@ border-bottom: 2px solid var(--cor-p4);
 padding-top: 30px;
 max-width: 470px;
 }
-.sobre-aulas .paragrafos P + p{
+.sobre-aulas .paragrafos P + p {
 padding-top: 30px;
 }
 .sobre .rotas h2 {
@@ -79,7 +79,27 @@ width: 10px;
 height: 2px;
 background: var(--cor-p2);
 margin-right: 4px;
-margin: 4px;
+margin-top: 4px;
+margin-bottom: 4px;
 }
 
-
+@media (max-width: 600px) {
+.sobre picture .imagem-0 {
+max-width: 100%;
+height: 671px;
+}
+.sobre picture .imagem-1 {
+max-width: 100%;
+height: 240px;
+}
+.sobre-aulas h1 {
+max-width: 100%;
+font-size: 2rem;
+}
+.icones {
+width: 100%;
+}
+.sobre-aulas .paragrafos {
+max-width: 100%;
+}
+}
