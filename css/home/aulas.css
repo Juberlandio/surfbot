@@ -1,14 +1,25 @@
 .aulas-bg {
 background: var(--cor-p4);
+position: relative;
+}
+.aulas-bg .imagem-ondas{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -90px;
+}
+.aulas-bg h1 {
+padding-top: 63px;
 }
 .aulas {
-padding-top: 63px;
+padding-top: 44px;
 padding-bottom: 23px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 gap: 30px;
+position: relative;
 }
 .aulas .faixa {
 background-color: var(--cor-0);
@@ -18,13 +29,14 @@ border-radius: 5px;
 }
 .icone-logo {
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 justify-content: center;
 align-items: center;
-padding-left: 10px;
+position: relative;
 }
-.icone-logo img + img{
-padding-left: 10px;
+.faixa .icone-logo img {
+position: absolute;
+top: -21px;
 }
 .item-aulas {
 width: 230px;
