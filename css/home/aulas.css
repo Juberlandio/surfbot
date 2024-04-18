@@ -3,10 +3,10 @@ background: var(--cor-p4);
 position: relative;
 }
 .aulas-bg .imagem-ondas{
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -90px;
+position: absolute;
+top: -30px;
+left: 50%;
+margin-left: -90px;
 }
 .aulas-bg h1 {
 padding-top: 63px;
@@ -18,13 +18,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-gap: 30px;
+gap: 50px;
 position: relative;
 }
 .aulas .faixa {
 background-color: var(--cor-0);
 width: 370px;
-height: 414px;
+height: auto;
 border-radius: 5px;
 }
 .icone-logo {
@@ -37,6 +37,62 @@ position: relative;
 .faixa .icone-logo img {
 position: absolute;
 top: -21px;
+}
+.faixa h2 {
+padding-top: 37px;
+padding-bottom: 40px;
+text-transform: uppercase;
+width: 231px;
+font-weight: 700;
+}
+.faixa .vantagens{
+display: block;
+width: 220px;
+height: auto;
+padding: 0px 80px 0px 69px;
+}
+.faixa .vantagens::after {
+content: "";
+grid-column: 1 / -1;
+justify-self: center;
+display: block;
+width: 100%;
+width: 231px;
+height: 2px;
+margin-top: 25px;
+background: var(--cor-p4);
+}
+.faixa .vantagens::before {
+content: "";
+grid-column: 1 / -1;
+justify-self: center;
+display: block;
+width: 100%;
+width: 231px;
+height: 2px;
+margin-bottom: 25px;
+background: var(--cor-p4);
+}
+.faixa .vantagens li::before {
+display: inline-block;
+content: '';
+width: 6px;
+height: 6px;
+background: var(--cor-0);
+border-radius: 50%;
+margin-right: 4px;
+border: 2px solid var(--cor-p10);
+}
+.faixa .vantagens li + li{
+padding-top: 25px;
+}
+.faixa .preco-aula {
+width: 102px;
+padding: 15px 199px 0px 69px;
+}
+.button-matricule-se {
+padding-top: 32px;
+padding-bottom: 30px;
 }
 .item-aulas {
 width: 230px;
@@ -61,4 +117,35 @@ height: 40px;
 }
 .item-aulas img {
 margin-left: 80px;
+}
+@media (max-width:600px) {
+.aulas .faixa {
+max-width: 250px;
+}
+.faixa .vantagens{
+width: 220px;
+height: auto;
+padding: 20px 0px 0px 29px;
+}
+.faixa .vantagens::after {
+width: 190px;
+}
+.faixa .vantagens::before {
+width: 190px;
+}
+.faixa h2 {
+  padding: 30px 0px 35px 0px;
+}
+.item-aulas {
+max-width: 130px;
+height: 40px;
+}
+.item-aulas img {
+margin-left: 5px;
+}
+.faixa .preco-aula {
+width: 100%;
+padding: 15px 0 0 0;
+text-align: center;
+}
 }
