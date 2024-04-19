@@ -29,7 +29,8 @@
           <a href="index.html"><img src="./assents/svg/surfbot-logo.svg" alt="Logo Surfbot"></a>
         </picture>
         <nav aria-label="primária">
-          <ul class="menu font-1-m cor-0">
+          <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+          <ul data-menu="list" class="menu dropdown-menu font-1-m cor-0">
             <li><a href="">Praia</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
             <li><a href="">Aulas</a></li>
@@ -173,7 +174,39 @@
           <p class="font-1-m cor-0">Regis Pereira</p>
       </div>
     </section>
+    <!-- <section class="contato-bg" aria-label="Contato">
+      <h1 class="font-1-xxl cor-p8 center">Contato</h1>
+      <div class="contato"> 
+        <section class="footer-formulario" aria-label="Formulário">
+          <form class="form" action="./contato.html">
+            <div class="col-2">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome">
+            </div>
+            <div class="col-2">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="col-2">
+              <label for="mensagem">Mensagem</label>
+              <textarea rows="5" id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button class="botao cor-0">Enviar Messagem</button>
+          </form>
+        </section>
+        <section>
+        <div>
+          <p class="titulo-2 font-xx-t2 cor-2">E-mail & Telefone</p>
+          <address class="cor-5">
+            <a href="mailto:contato@bikcraft.com">contato@surfbot.com</a>
+            <a href="tel:+21 99999-9999">Cel: 21 99999-9999</a></li>
+          </address>
+        </div>
+        </section>
+      </div>
+    </section> -->
   </main>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
