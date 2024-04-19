@@ -1,7 +1,7 @@
 .frase-bg {
 width: 100%;
 height: 480px;
-background-image: url('./assents/img/mar.png');
+background-image: url('../assents/img/mar.png');
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
