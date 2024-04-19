@@ -6,6 +6,7 @@
 @import "./home/introducao.css";
 @import "./home/sobre.css";
 @import "./home/aulas.css";
+@import "./home/frase.css";
 
 /* Utilidades */
 @import "./utilidades/cores.css";
