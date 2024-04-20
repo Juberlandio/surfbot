@@ -165,8 +165,8 @@ height: 40px;
 margin-left: 5px;
 }
 .faixa .preco-aula {
-width: 100%;
-padding: 15px 0 0 0;
-text-align: center;
+width: auto;
+padding: 15px 0 0 40px;
+text-align: start;
 }
 }
