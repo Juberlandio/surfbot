@@ -28,23 +28,23 @@
         <picture>
           <a href="index.html"><img src="./assents/svg/surfbot-logo.svg" alt="Logo Surfbot"></a>
         </picture>
-        <nav aria-label="primária">
+        <nav aria-label="primária" data-menu="suave">
           <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
           <ul data-menu="list" class="menu dropdown-menu font-1-m cor-0">
-            <li><a href="">Praia</a></li>
+            <li><a href="#praia">Praia</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
-            <li><a href="">Aulas</a></li>
+            <li><a href="#aulas">Aulas</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
-            <li class="matricula"><a href="">Matricule-se</a></li>
+            <li class="matricula"><a href="#matricula">Matricule-se</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <main>
-    <section class="introducao-bg" aria-labelledby="surf">
+    <section class="introducao-bg" aria-labelledby="surf" id="matricula">
       <div class="introducao">
         <div class="introducao-container">
           <h1 id="surf" class="font-1-xxl cor-0">Escola de Surf</h1>
@@ -59,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section class="sobre-bg" aria-label="Sobre">
+    <section class="sobre-bg" aria-label="Sobre" id="praia">
       <div class="sobre container">
         <div class="sobre-mapa">
           <div>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </section>
-    <section class="aulas-bg" aria-label="Aulas">
+    <section class="aulas-bg" aria-label="Aulas" data-anime="scroll" id="aulas">
       <img class="imagem-ondas center" src="assents/svg/ondas.svg" alt="">
       <h1 class="font-1-xxl cor-p8 center">Aulas</h1>
       <div class="aulas container">
@@ -169,12 +169,12 @@
       </div>
     </section>
     <section class="frase-bg" aria-label="Frase">
-      <div class="frase center">
+      <div class="frase center" data-anime="scroll">
         <h2 class="font-1-xxl cor-0">“O surf liberta as ondas de uma vida.”</h2>
         <p class="font-1-m cor-0">Regis Pereira</p>
       </div>
     </section>
-    <section class="contato-bg" aria-label="Contato">
+    <section class="contato-bg" aria-label="Contato" data-anime="scroll" id="contato">
       <h1 class="font-1-xxl cor-p8 center">Contato</h1>
       <div class="contato container">
         <section class="footer-formulario" aria-label="Formulário">
