@@ -12,6 +12,8 @@
 @import "./home/menu-mobile.css";
 @import "./home/rodape.css";
 
+/* matricule-se */
+@import "./matricule-se/pagina-matricula.css";
 /* Utilidades */
 @import "./utilidades/cores.css";
 @import "./utilidades/componentes.css";
