@@ -10,6 +10,7 @@
 @import "./home/formulario.css";
 @import "./home/contato.css";
 @import "./home/menu-mobile.css";
+@import "./home/rodape.css";
 
 /* Utilidades */
 @import "./utilidades/cores.css";
