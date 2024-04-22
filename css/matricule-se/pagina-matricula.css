@@ -31,6 +31,7 @@ align-items: center;
 background: var(--cor-p4);
 width: 430px;
 height: 580px;
+border-radius: 5px;
 }
 .plano {
 display: grid;
@@ -38,8 +39,8 @@ grid-template-columns: 1fr 1fr 1fr;
 justify-content: center;
 align-items: center;
 padding: 20px 40px;
-}
 
+}
 .plano h2:first-child {
 padding: 37px 30px 20px 0px;
 grid-column: 1 / -1;
