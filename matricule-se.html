@@ -26,11 +26,11 @@
         <nav aria-label="primária" data-menu="suave">
           <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
           <ul data-menu="list" class="menu dropdown-menu font-1-m cor-0">
-            <li><a href="#praia">Praia</a></li>
+            <li><a href="index.html#praia">Praia</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
-            <li><a href="#aulas">Aulas</a></li>
+            <li><a href="index.html/#aulas">Aulas</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
             <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
             <li class="matricula"><a href="matricule-se.html">Matricule-se</a></li>
           </ul>
@@ -40,24 +40,25 @@
   </header>
   <main>
     <section class="matricula-bg">
-      <div class="matricula container">
+      <div class="matricula">
         <div class="matricule-se-bg">
           <h1 class="font-1-xxl cor-p8 center">Matricule-se</h1>
         </div>
-        <form class="form">
-          <div class="dados form">
-            <div class="col-2">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome">
-            </div>
-            <div class="col-2">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="col-2">
-              <label for="cpf">CPF</label>
-              <input type="text" id="cpf" name="cpf" placeholder="111.111.111-01">
-            </div>
+        <div class="container-form">
+          <form class="form-1">
+            <div class="dados form">
+              <div class="col-2">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+              </div>
+              <div class="col-2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="col-2">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="111.111.111-01">
+              </div>
               <div>
                 <label for="endereco">Endereço</label>
                 <input type="text" id="endereco" name="endereco" placeholder="Rua, Número e Bairro">
@@ -66,14 +67,69 @@
                 <label for="estado">Estado</label>
                 <input type="text" id="estado" name="estado" placeholder="Selecione o estado">
               </div>
-          </div>
-          <div class="plano-bg">
-            <div class="plano">
-              <h2>Escolha o Plano</h2>
-
             </div>
-          </div>
-        </form>
+            <div class="container-plano">
+              <div class="plano-bg">
+                <div class="plano">
+                  <h2 class="font-1-m cor-p8">Escolha o Plano</h2>
+
+                  <input type="radio" name="tipo" value="infantil" id="infantil">
+                  <label class="input-infantil" for="infantil">Infantil</label>
+                  <input type="radio" name="tipo" value="adulto" id="adulto">
+                  <label for="adulto">Adulto</label>
+                  <input type="radio" name="tipo" value="profissional" id="profissional">
+                  <label class="input-profissional" for="profissional">Profissional</label>
+
+                  <div class="faixa-infantil center-container" id="faixa-infantil">
+                    <div class="icone-logo">
+                      <img class="center" src="assents/svg/surfbot-icon.svg" alt="">
+                    </div>
+                    <h2 class="font-1-xl cor-p8 center">Infantil</h2>
+                    <ul class="vantagens font-1-s cor-p8">
+                      <li><a href="">Público entre 5 e 15 anos</a></li>
+                      <li><a href="">Equipamentos fornecidos</a></li>
+                      <li><a href="">Horários de Sex. à Sab.</a></li>
+                      <li><a href="">2 horas seguidas de aula</a></li>
+                    </ul>
+                    <div class="preco-aula">
+                      <p class="font-1-s cor-p2">R$ 49,00 / Aula</p>
+                    </div>
+                  </div>
+                  <div class="faixa-infantil center-container" id="faixa-adulto">
+                    <div class="icone-logo">
+                      <img class="center" src="assents/svg/surfbot-icon.svg" alt="">
+                    </div>
+                    <h2 class="font-1-xl cor-p8 center">Adulto</h2>
+                    <ul class="vantagens font-1-s cor-p8">
+                      <li><a href="">Público entre 5 e 15 anos</a></li>
+                      <li><a href="">Equipamentos fornecidos</a></li>
+                      <li><a href="">Horários de Sex. à Sab.</a></li>
+                      <li><a href="">2 horas seguidas de aula</a></li>
+                    </ul>
+                    <div class="preco-aula">
+                      <p class="font-1-s cor-p2">R$ 49,00 / Aula</p>
+                    </div>
+                  </div>
+                  <div class="faixa-infantil center-container" id="faixa-profissional">
+                    <div class="icone-logo">
+                      <img class="center" src="assents/svg/surfbot-icon.svg" alt="">
+                    </div>
+                    <h2 class="font-1-xl cor-p8 center">Profissional</h2>
+                    <ul class="vantagens font-1-s cor-p8">
+                      <li><a href="">Público entre 5 e 15 anos</a></li>
+                      <li><a href="">Equipamentos fornecidos</a></li>
+                      <li><a href="">Horários de Sex. à Sab.</a></li>
+                      <li><a href="">2 horas seguidas de aula</a></li>
+                    </ul>
+                    <div class="preco-aula">
+                      <p class="font-1-s cor-p2">R$ 49,00 / Aula</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>

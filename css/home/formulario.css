@@ -1,3 +1,10 @@
+.form-1 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+gap: 100px;
+padding-top: 73px;
+}
 .form {
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -30,7 +37,12 @@ border: 0px;
 outline: none;
 background: var(--cor-3);
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+.form-1 {
+grid-template-columns: 1fr;
+justify-content: center;
+align-items: center;
+}
 .form {
 grid-template-columns: 1fr;
 }
