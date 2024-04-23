@@ -11,8 +11,6 @@ align-items: center;
 }
 .container-form {
 max-width: 1460px;
-padding-left: 8px;
-padding-right: 8px;
 box-sizing: border-box;
 margin-left: auto;
 margin-right: auto;
@@ -48,6 +46,10 @@ right: 15px;
 background: url('../assents/svg/vetor-seta.svg') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
+}
+.dados {
+padding-left: 20px;
+padding-right: 20px;
 }
 .dados h2 {
 font-weight: bold;
