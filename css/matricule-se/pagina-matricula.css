@@ -295,6 +295,9 @@ gap: 50px;
 font-size: 2.5rem;
 padding: 20px;
 }
+.cadeado {
+margin-bottom: 0px;
+}
 .plano label::before {
 display: none;
 }
