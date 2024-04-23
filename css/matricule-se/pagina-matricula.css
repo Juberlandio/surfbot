@@ -74,7 +74,7 @@ grid-template-columns:auto auto;
 justify-content: center;
 align-items: center;
 font: 400 1rem / 1.5 Poppins, sans-serif;
-padding: 14px 6px;
+padding: 14px 2px;
 border: 2px solid var(--cor-p4);
 }
 .pagamento input{
