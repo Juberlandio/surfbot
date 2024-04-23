@@ -143,6 +143,7 @@ display: grid;
 grid-template-columns: auto 1fr;
 justify-content: center;
 align-items: center;
+margin-bottom: 64px;
 }
 .cadeado img{
 margin-right: 10px;
