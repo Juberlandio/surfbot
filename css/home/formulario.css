@@ -38,6 +38,7 @@ background: var(--cor-3);
 @media (max-width: 1000px) {
 .form-1 {
 grid-template-columns: 1fr;
+gap: 40px;
 }
 .form {
 grid-template-columns: 1fr;
