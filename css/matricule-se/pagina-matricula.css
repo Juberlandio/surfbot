@@ -60,7 +60,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 justify-content: center;
 align-items: center;
-padding: 8px 0px 20px 0px;
+padding: 8px 0px 0px 0px;
 grid-column: 1 / -1;
 max-width: 412px;
 }
