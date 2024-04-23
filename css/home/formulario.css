@@ -1,7 +1,6 @@
 .form-1 {
 display: grid;
 grid-template-columns: 1fr 1fr;
-
 gap: 100px;
 padding-top: 73px;
 }
@@ -32,16 +31,13 @@ border-radius: 5px;
 border: 0px;
 }
 .form input[type="text"]:focus,
-.form input[type="email"]:focus,
-.form textarea:focus {
+.form input[type="email"]:focus {
 outline: none;
 background: var(--cor-3);
 }
 @media (max-width: 1000px) {
 .form-1 {
 grid-template-columns: 1fr;
-justify-content: center;
-align-items: center;
 }
 .form {
 grid-template-columns: 1fr;
@@ -50,8 +46,7 @@ grid-template-columns: 1fr;
 grid-column: 1;
 }
 .form input[type="text"],
-.form input[type="email"],
-.form textarea {
+.form input[type="email"] {
 font: 400 0.7rem/1.5 "Roboto", sans-serif;
 }
 }
