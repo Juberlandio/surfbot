@@ -67,6 +67,13 @@ height: 50px;
 margin-left: 40px;
 }
 @media (max-width: 600px) {
+.introducao-container {
+justify-content: center;
+align-items: end;
+}
+.newsletter-form {
+place-self: center;
+}
 .introducao-container h1 {
 font-size: 3rem;
 }
