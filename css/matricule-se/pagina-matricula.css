@@ -287,6 +287,16 @@ padding: 20px 199px 0px 69px;
 display: block;
 }
 @media (max-width: 1000px) {
+.container-plano {
+max-width: 1460px;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+padding-right: 8px;
+padding-left: 8px;
+}
+} 
+@media (max-width: 600px) {
 .matricule-se-bg {
 height: auto;
 gap: 50px;
@@ -300,14 +310,6 @@ margin-bottom: 0px;
 }
 .plano label::before {
 display: none;
-}
-.container-plano {
-max-width: 1460px;
-box-sizing: border-box;
-margin-left: auto;
-margin-right: auto;
-padding-right: 8px;
-padding-left: 8px;
 }
 .plano label {
 padding: 10px 5px;
