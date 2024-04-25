@@ -22,7 +22,7 @@ margin-right: auto;
 height: 400px;
 }
 .introducao-container h1 {
-line-height: 0.83;
+line-height: 0.70;
 }
 .newsletter-form {
 place-self: end;
@@ -75,7 +75,7 @@ align-items: end;
 place-self: center;
 }
 .introducao-container h1 {
-font-size: 3rem;
+font-size: 2.65rem;
 }
 .introducao-container h1 {
 line-height: 1;
