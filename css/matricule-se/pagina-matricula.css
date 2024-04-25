@@ -192,7 +192,6 @@ grid-template-columns:auto auto;
 justify-content: center;
 align-items: center;
 padding: 10px 6px;
-border: 2px solid var(--cor-p4);
 font-weight: 600;
 }
 .plano input{
@@ -248,9 +247,17 @@ height: 374px;
 border-radius: 5px;
 }
 .input-infantil {
+border-left: 2px solid var(--cor-p4);
+border-right: 2px solid var(--cor-p4);
+border-bottom: 2px solid var(--cor-p4);
+border-top: 2px solid var(--cor-p4);
 border-radius: 5px 0px 0px 5px;
 }
 .input-profissional {
+border-right: 2px solid var(--cor-p4);
+border-left: 2px solid var(--cor-p4);
+border-bottom: 2px solid var(--cor-p4);
+border-top: 2px solid var(--cor-p4);
 border-radius: 0px 5px 5px 0px;
 }
 .faixa-infantil h2 {
