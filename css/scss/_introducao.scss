@@ -27,6 +27,12 @@ line-height: 0.70;
 .newsletter-form {
 place-self: end;
 }
+.newsletter-form input[type="text"]:focus,
+.newsletter-form input[type="email"]:focus {
+outline: none;
+background: $cor-2;
+
+}
 .newsletter-form .nome {
 border-radius: 5px;
 padding: 0px 0px 0px 20px;
