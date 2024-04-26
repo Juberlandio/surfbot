@@ -33,7 +33,7 @@ width: 7px;
 background-color: rgb(35, 38, 41);
 }
 ::-webkit-scrollbar-thumb {
-background-color: var(--cor-p2);
+background-color: $azul-1;
 border-radius: 30px;
 }
 ::-webkit-scrollbar-track {

@@ -1,5 +1,5 @@
 .matricule-se-bg {
-background-color: var(--cor-p4);
+background-color: $branco-0;
 width: 100%;
 height: 120px;
 display: flex;
@@ -18,19 +18,19 @@ margin-right: auto;
 margin: auto;
 }
 ::-webkit-input-placeholder {
-color: var(--cor-p5); 
+color: var($branco-1); 
 font: 500 1.125rem/1.3 "Nunito", sans-serif;
 }
 :-moz-placeholder {
-color: var(--cor-p5); 
+color: var($branco-1); 
 font: 500 1.125rem/1.3 "Nunito", sans-serif;
 }
 ::-moz-placeholder {
-color: var(--cor-p5); 
+color: var($branco-1); 
 font: 500 1.125rem/1.3 "Nunito", sans-serif;
 }
 :-ms-input-placeholder {  
-color: var(--cor-p5);  
+color: var($branco-1);  
 font: 500 1.125rem/1.3 "Nunito", sans-serif;
 }
 .estado {
@@ -55,7 +55,7 @@ padding: 0px 20px 64px 20px;
 .dados h2 {
 font-weight: bold;
 padding: 20px 20px 15px 0px;
-border-bottom: 2px solid var(--cor-p4);
+border-bottom: 2px solid $branco-0;
 grid-column: 1 / -1;
 }
 .pagamento {
@@ -68,8 +68,8 @@ grid-column: 1 / -1;
 max-width: 412px;
 }
 .pagamento label {
-color: var(--cor-p8);
-background-color: var(--cor-0);
+color: $cinza-1;
+background-color: $cor-0;
 cursor: pointer;
 display: grid;
 gap: 0px;
@@ -86,19 +86,19 @@ position: absolute;
 pointer-events: none;
 }
 .cartaoCredito {
-border-left: 2px solid var(--cor-p4);
-border-bottom: 2px solid var(--cor-p4);
-border-top: 2px solid var(--cor-p4);
+border-left: 2px solid $branco-0;
+border-bottom: 2px solid $branco-0;
+border-top: 2px solid $branco-0;
 border-radius: 5px 0 0 5px;
 }
 .boletoBancario {
-border-right: 2px solid var(--cor-p4);
-border-bottom: 2px solid var(--cor-p4);
-border-top: 2px solid var(--cor-p4);
+border-right: 2px solid $branco-0;
+border-bottom: 2px solid $branco-0;
+border-top: 2px solid $branco-0;
 border-radius: 0 5px 5px 0;
 }
 .pagamento input:checked + label{
-background: var(--cor-p5);
+background: var($branco-1);
 }
 .pagamento label::before {
 content: "";
@@ -107,13 +107,13 @@ box-sizing: border-box;
 width: 18px;
 height: 18px;
 margin-right: 10px;
-border: 1px solid var(--cor-p2);
+border: 1px solid $azul-1;
 border-radius: 50%;
 justify-self: end;
 }
 .pagamento input:checked + label::before {
-border-color: var(--cor-0);
-box-shadow: inset 0 0 0 5px var(--cor-p2), inset 0 0 0 6px var(--cor-0);
+border-color: $cor-0;
+box-shadow: inset 0 0 0 5px $azul-1, inset 0 0 0 6px $cor-0;
 } 
 .data-expiracao {
 display: grid;
@@ -125,7 +125,7 @@ align-items: center;
 .item-matricula {
 width: 230px;
 height: 40px;
-background: var(--cor-p2);
+background: $azul-1;
 border-radius: 5px;
 z-index: 3;
 transition: 0.3s;
@@ -133,7 +133,7 @@ margin-top: 15px;
 }
 .item-matricula:hover {
 opacity: 1;
-background-color: var(--cor-p2);
+background-color: $azul-1;
 transform: scale(1.1);
 }
 .item-matricula a {
@@ -147,7 +147,7 @@ text-transform: uppercase;
 }
 .realizar-matricula {
 padding-top: 20px;
-border-top: 2px solid var(--cor-p4);
+border-top: 2px solid $branco-0;
 grid-column: 1 / -1;
 }
 .cadeado {
@@ -161,7 +161,7 @@ grid-column: 1 / -1;
 margin-right: 10px;
 }
 .plano-bg {
-background: var(--cor-p4);
+background: $branco-0;
 width: 430px;
 height: 580px;
 border-radius: 5px;
@@ -184,8 +184,8 @@ grid-column: 1 / -1;
 padding: 37px 30px 43px 30px;
 }
 .plano label {
-color: var(--cor-p8);
-background-color: var(--cor-0);
+color: $cinza-1;
+background-color: $cor-0;
 cursor: pointer;
 display: grid;
 grid-template-columns:auto auto;
@@ -200,7 +200,7 @@ position: absolute;
 pointer-events: none;
 }
 .plano input:checked + label{
-background: var(--cor-p5);
+background: var($branco-1);
 }
 .plano label::before {
 content: "";
@@ -209,13 +209,13 @@ box-sizing: border-box;
 width: 18px;
 height: 18px;
 margin-right: 5px;
-border: 1px solid var(--cor-p2);
+border: 1px solid $azul-1;
 border-radius: 50%;
 justify-self: end;
 }
 .plano input:checked + label::before {
-border-color: var(--cor-0);
-box-shadow: inset 0 0 0 5px var(--cor-p2), inset 0 0 0 6px var(--cor-0);
+border-color: $cor-0;
+box-shadow: inset 0 0 0 5px $azul-1, inset 0 0 0 6px $cor-0;
 } 
 .plano::before {
 content: "";
@@ -241,23 +241,23 @@ top: -21px;
 z-index: 3;
 }
 .plano .faixa-infantil {
-background: var(--cor-0);
+background: $cor-0;
 width: 370px;
 height: 374px;
 border-radius: 5px;
 }
 .input-infantil {
-border-left: 2px solid var(--cor-p4);
-border-right: 2px solid var(--cor-p4);
-border-bottom: 2px solid var(--cor-p4);
-border-top: 2px solid var(--cor-p4);
+border-left: 2px solid $branco-0;
+border-right: 2px solid $branco-0;
+border-bottom: 2px solid $branco-0;
+border-top: 2px solid $branco-0;
 border-radius: 5px 0px 0px 5px;
 }
 .input-profissional {
-border-right: 2px solid var(--cor-p4);
-border-left: 2px solid var(--cor-p4);
-border-bottom: 2px solid var(--cor-p4);
-border-top: 2px solid var(--cor-p4);
+border-right: 2px solid $branco-0;
+border-left: 2px solid $branco-0;
+border-bottom: 2px solid $branco-0;
+border-top: 2px solid $branco-0;
 border-radius: 0px 5px 5px 0px;
 }
 .faixa-infantil h2 {
@@ -281,7 +281,7 @@ display: block;
 width: 231px;
 height: 2px;
 margin-top: 25px;
-background: var(--cor-p4);
+background: $branco-0;
 }
 .faixa-infantil .vantagens::before {
 content: "";
@@ -291,17 +291,17 @@ display: block;
 width: 231px;
 height: 2px;
 margin-bottom: 25px;
-background: var(--cor-p4);
+background: $branco-0;
 }
 .faixa-infantil .vantagens li::before {
 display: inline-block;
 content: '';
 width: 6px;
 height: 6px;
-background: var(--cor-0);
+background: $cor-0;
 border-radius: 50%;
 margin-right: 4px;
-border: 2px solid var(--cor-p10);
+border: 2px solid $vermelho-0;
 }
 .faixa-infantil .vantagens li + li{
 padding-top: 25px;

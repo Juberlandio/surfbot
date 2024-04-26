@@ -1,8 +1,8 @@
 .header-container {
-background: var(--cor-p9);
+background: $cinza-2;
 }
 .menu-topo {
-background: var(--cor-p2);
+background: $azul-1;
 }
 .menu-topo h2{
 display: flex;
@@ -45,7 +45,7 @@ bottom: 8px;
 right: 0px;
 width: 100%;
 height: 3px;
-background: var(--cor-p11);
+background: $vermelho-1;
 display: block; 
 transition: 0.3s;
 position: absolute; /* Realinhando ao centro */

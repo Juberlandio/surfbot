@@ -1,0 +1,21 @@
+@import 'variaveis-e-mixins';
+/* Global */
+@import 'global';
+
+/* home */
+@import 'header';
+@import 'introducao';
+@import 'sobre';
+@import 'aulas';
+@import 'frase';
+@import 'formulario';
+@import 'contato';
+@import 'menu-mobile';
+@import 'rodape';
+
+/* matricule-se */
+@import 'pagina-matricula';
+/* Utilidades */
+@import 'cores';
+@import 'componentes';
+@import 'tipografia';
