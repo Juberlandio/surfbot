@@ -25,6 +25,7 @@ padding-bottom: 40px;
 .sobre-aulas h1 {
 max-width: 454px;
 padding-bottom: 40px;
+@include tipo-2(72);
 }
 .icones {
 display: flex;
@@ -43,9 +44,13 @@ border-bottom: 2px solid $branco-0;
 width: 55.48px;
 height: 64px;
 }
+.icones p {
+@include tipo-1(24);
+}
 .sobre-aulas .paragrafos {
 padding-top: 30px;
 max-width: 470px;
+@include tipo-1(18);
 }
 .sobre-aulas .paragrafos P + p {
 padding-top: 30px;
@@ -54,12 +59,14 @@ padding-top: 30px;
 padding-bottom: 13px;
 padding-left: 15px;
 font-weight: bold;
+@include tipo-1(14);
 }
 .sobre .rotas p + p {
 padding-top: 9px;
 }
 .sobre .rotas p {
 padding-left: 15px;
+@include tipo-1(14);
 }
 .sobre .rotas span {
 padding-right: 5px;

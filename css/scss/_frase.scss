@@ -17,8 +17,12 @@ justify-content: center;
 align-items: end;
 padding: 20px;
 }
+.frase h2 {
+  @include tipo-2(72);
+}
 .frase p{
 align-self: start;
+@include tipo-1(18);
 }
 @media (max-width: 700px) {
 .frase h2 {

@@ -1,3 +1,6 @@
+.contato-bg h1 {
+@include tipo-2(72)
+}
 .contato {
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -11,6 +14,12 @@ border-right: 2px solid $branco-0;
 }
 .endereco {
 padding: 30px 0px 30px 114px;
+}
+.endereco h3 {
+  @include tipo-1(18);
+}
+.endereco p {
+  @include tipo-1(14);
 }
 .button-formulario {
 width: 230px;
@@ -33,6 +42,7 @@ justify-content: center;
 align-items: center;
 width: 230px;
 height: 40px;
+@include tipo-1(18);
 }
 .button-formulario img {
 margin-left: 20px;
@@ -45,8 +55,10 @@ padding-bottom: 18px;
 .contato p + p{
 padding-top: 8px;
 }
+
 .contato .item-2 ul li{
 padding-top: 8px;
+@include tipo-1(14);
 }
 .contato .item-2::after {
 content: "";
@@ -79,6 +91,7 @@ justify-content: flex-start;
 align-items: center;
 width: 100%;
 height: 40px;
+@include tipo-1(14);
 }
 .item-contato img {
 margin-left: 10px;

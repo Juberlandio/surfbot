@@ -8,6 +8,9 @@ gap: 100px;
 justify-content: center;
 align-items: center;
 }
+.matricule-se-bg h1 {
+@include tipo-2(72)
+}
 .container-form {
 max-width: 1460px;
 box-sizing: border-box;
@@ -57,6 +60,7 @@ font-weight: bold;
 padding: 20px 20px 15px 0px;
 border-bottom: 2px solid $branco-0;
 grid-column: 1 / -1;
+@include tipo-1(18);
 }
 .pagamento {
 display: grid;
@@ -76,7 +80,6 @@ gap: 0px;
 grid-template-columns:auto auto;
 justify-content: center;
 align-items: center;
-font: 400 1rem / 1.5 Poppins, sans-serif;
 padding: 14px 2px;
 white-space: nowrap;
 }
@@ -144,11 +147,15 @@ align-items: center;
 width: 100%;
 height: 40px;
 text-transform: uppercase;
+@include tipo-1(18)
 }
 .realizar-matricula {
 padding-top: 20px;
 border-top: 2px solid $branco-0;
 grid-column: 1 / -1;
+}
+.realizar-matricula p {
+@include tipo-1(18);
 }
 .cadeado {
 display: grid;
@@ -156,6 +163,10 @@ grid-template-columns: auto 1fr;
 justify-content: center;
 align-items: center;
 grid-column: 1 / -1;
+}
+.cadeado p {
+@include tipo-1(14);
+
 }
 .cadeado img{
 margin-right: 10px;
@@ -179,6 +190,7 @@ position: relative;
 .plano h2:first-child {
 padding: 37px 30px 20px 0px;
 grid-column: 1 / -1;
+@include tipo-1(18);
 }
 .plano h2:last-child {
 padding: 37px 30px 43px 30px;
@@ -193,6 +205,7 @@ justify-content: center;
 align-items: center;
 padding: 10px 6px;
 font-weight: 600;
+@include tipo-1(18);
 }
 .plano input{
 opacity: 0;
@@ -234,6 +247,7 @@ grid-column: 1 / -1;
 -moz-box-shadow: 0px 10px 10px 0px rgba(187, 204, 221, 0.4);
 box-shadow: 0px 10px 10px 0px rgba(187, 204, 221, 0.4);
 }
+
 .center-container{
 margin: 0 auto;
 margin-top: 30px;
@@ -269,6 +283,10 @@ padding-bottom: 40px;
 text-transform: uppercase;
 width: 231px;
 font-weight: 700;
+@include tipo-1(18);
+}
+.faixa-infantil ul {
+@include tipo-1(14);
 }
 .faixa-infantil .vantagens{
 display: block;
@@ -310,8 +328,11 @@ border: 2px solid $vermelho-0;
 padding-top: 25px;
 }
 .faixa-infantil .preco-aula {
-width: 102px;
+width: 130px;
 padding: 20px 199px 0px 69px;
+}
+.faixa-infantil .preco-aula p{
+@include tipo-1(18)
 }
 #infantil:checked ~ #faixa-infantil,
 #adulto:checked ~ #faixa-adulto,

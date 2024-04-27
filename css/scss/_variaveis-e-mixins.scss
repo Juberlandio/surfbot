@@ -24,3 +24,30 @@ $cinza-2: #17222D;
 $vermelho-0: #FF3726; 
 $vermelho-1: #EE2211; 
 $vermelho-2: #D91504; 
+
+
+
+// Tipografia
+@mixin tipo-1($tamanho) {
+	font-family: "Nunito", sans-serif;
+	@if $tamanho == 14 {
+		font-size: 14px;
+		line-height: 1;
+		font-weight: 500;
+	}
+	@else if $tamanho == 18  {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	@else if $tamanho == 24 {
+		font-size: 24px;
+		line-height: 1.3;
+	}
+}
+@mixin tipo-2($tamanho) {
+	font-family: "Alice", sans-serif;
+	@if $tamanho == 72 {
+		font-size: 72px;
+		font-weight: 400;
+	}
+}

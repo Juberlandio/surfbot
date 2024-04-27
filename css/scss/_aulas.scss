@@ -10,6 +10,7 @@ margin-left: -90px;
 }
 .aulas-bg h1 {
 padding-top: 63px;
+@include tipo-2(72)
 }
 .aulas {
 padding-top: 44px;
@@ -47,6 +48,10 @@ padding-bottom: 40px;
 text-transform: uppercase;
 width: 231px;
 font-weight: 700;
+@include tipo-1(24)
+}
+.faixa ul {
+  @include tipo-1(14)
 }
 .faixa .vantagens{
 display: block;
@@ -90,6 +95,7 @@ padding-top: 25px;
 .faixa .preco-aula {
 width: 102px;
 padding: 15px 199px 0px 69px;
+@include tipo-1(14);
 }
 .button-matricule-se {
 padding-top: 32px;
@@ -115,9 +121,11 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 40px;
+text-transform: uppercase;
+@include tipo-1(18);
 }
 .item-aulas img {
-margin-left: 80px;
+margin-left: 70px;
 }
 .span-contato {
 position: relative;
@@ -138,6 +146,7 @@ position: absolute;
 padding-bottom: 57px;
 padding-left: 20px;
 padding-right: 20px;
+@include tipo-1(18);
 }
 @media (max-width:600px) {
 .aulas-bg h1 {
@@ -163,6 +172,9 @@ padding: 30px 0px 10px 0px;
 .item-aulas {
 max-width: 130px;
 height: 40px;
+}
+.item-aulas a {
+@include tipo-1(14);
 }
 .item-aulas img {
 margin-left: 5px;
