@@ -3,11 +3,18 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 100px;
 padding-top: 73px;
+@include d(f) {
+  grid-template-columns: 1fr;
+  gap: 40px;
+  }
 }
 .form {
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 22px;
+@include d(f) {
+  grid-template-columns: 1fr;
+  }
 }
 .form label {
 display: block;
@@ -17,6 +24,9 @@ color: $cinza-1;
 }
 .form .col-2 {
 grid-column: span 2;
+@include d(f) {
+  grid-column: 1;
+  }
 }
 .form input[type="text"],
 .form input[type="email"],
@@ -34,16 +44,4 @@ border: 0px;
 .form input[type="email"]:focus {
 outline: none;
 background: $cor-2;
-}
-@include d(f) {
-.form-1 {
-grid-template-columns: 1fr;
-gap: 40px;
-}
-.form {
-grid-template-columns: 1fr;
-}
-.form .col-2 {
-grid-column: 1;
-}
 }

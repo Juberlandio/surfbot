@@ -18,16 +18,14 @@ align-items: end;
 padding: 20px;
 }
 .frase h2 {
-  @include tipo-2(72);
+@include tipo-2(72);
+@include d(t) {
+  font-size: 2.5rem;
+  max-width: 100%;
+  text-align: center;
+  }
 }
 .frase p{
 align-self: start;
 @include tipo-1(18);
-}
-@include d(t) {
-.frase h2 {
-font-size: 2.5rem;
-max-width: 100%;
-text-align: center;
-}
 }

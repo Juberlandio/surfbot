@@ -20,13 +20,24 @@ box-sizing: border-box;
 margin-left: auto;
 margin-right: auto;
 height: 400px;
+@include d(m) {
+  justify-content: center;
+  align-items: end;
+  }
 }
 .introducao-container h1 {
 @include tipo-2(72);
 line-height: 0.70;
+@include d(m) {
+  font-size: 2.65rem;
+  line-height: 1;
+  }
 }
 .newsletter-form {
 place-self: end;
+@include d(m) {
+  place-self: center;
+  }
 }
 .newsletter-form input[type="text"]:focus,
 .newsletter-form input[type="email"]:focus {
@@ -41,6 +52,10 @@ width: 471px;
 height: 50px;
 border: 0px;
 box-shadow: 0 5px 5px 0 rgba(23, 34, 45, 0.4);
+@include d(m) {
+  max-width: 250px;
+  height: 48px;
+  }
 }
 .newsletter-form ul {
 display: inline-block;
@@ -55,6 +70,11 @@ border-radius: 0px 5px 5px 0px;
 margin-left: -190px;
 z-index: 3;
 transition: 0.3s;
+@include d(m) {
+  width: 130px;
+  height: 48px;
+  margin-left: -130px;
+  }
 }
 .item-introducao:hover {
 opacity: 1;
@@ -72,32 +92,8 @@ height: 50px;
 }
 .item-introducao img {
 margin-left: 40px;
-}
 @include d(m) {
-.introducao-container {
-justify-content: center;
-align-items: end;
-}
-.newsletter-form {
-place-self: center;
-}
-.introducao-container h1 {
-font-size: 2.65rem;
-}
-.introducao-container h1 {
-line-height: 1;
-}
-.newsletter-form .nome {
-max-width: 250px;
-height: 48px;
-}
-.item-introducao {
-width: 130px;
-height: 48px;
-margin-left: -130px;
-}
-.item-introducao img {
-margin-left: 10px;
-display: none;
-}
+  margin-left: 10px;
+  display: none;
+  }
 }

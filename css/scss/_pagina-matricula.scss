@@ -7,9 +7,17 @@ flex-wrap: nowrap;
 gap: 100px;
 justify-content: center;
 align-items: center;
+@include d(m) {
+height: auto;
+gap: 50px;
+}
 }
 .matricule-se-bg h1 {
-@include tipo-2(72)
+@include tipo-2(72);
+@include d(m) {
+font-size: 2.5rem;
+padding: 20px;
+}
 }
 .container-form {
 max-width: 1460px;
@@ -71,7 +79,7 @@ padding: 8px 0px 0px 0px;
 grid-column: 1 / -1;
 max-width: 412px;
 }
-.pagamento label {
+.pagamento .cartaoCredito {
 color: $cinza-1;
 background-color: $cor-0;
 cursor: pointer;
@@ -81,24 +89,34 @@ grid-template-columns:auto auto;
 justify-content: center;
 align-items: center;
 padding: 14px 2px;
-white-space: nowrap;
-}
-.pagamento input{
-opacity: 0;
-position: absolute;
-pointer-events: none;
-}
-.cartaoCredito {
+white-space: wrap;
+text-align: center;
 border-left: 2px solid $branco-0;
 border-bottom: 2px solid $branco-0;
 border-top: 2px solid $branco-0;
 border-radius: 5px 0 0 5px;
 }
-.boletoBancario {
+.pagamento .boletoBancario {
+color: $cinza-1;
+background-color: $cor-0;
+cursor: pointer;
+display: grid;
+gap: 0px;
+grid-template-columns:auto auto;
+justify-content: center;
+align-items: center;
+padding: 14px 10px;
+white-space: wrap;
+text-align: center;
 border-right: 2px solid $branco-0;
 border-bottom: 2px solid $branco-0;
 border-top: 2px solid $branco-0;
 border-radius: 0 5px 5px 0;
+}
+.pagamento input{
+opacity: 0;
+position: absolute;
+pointer-events: none;
 }
 .pagamento input:checked + label{
 background: $branco-1;
@@ -113,6 +131,9 @@ margin-right: 10px;
 border: 1px solid $azul-1;
 border-radius: 50%;
 justify-self: end;
+@include d(m) {
+display: none;
+}
 }
 .pagamento input:checked + label::before {
 border-color: $cor-0;
@@ -163,6 +184,9 @@ grid-template-columns: auto 1fr;
 justify-content: center;
 align-items: center;
 grid-column: 1 / -1;
+@include d(m) {
+margin-bottom: 0px;
+}
 }
 .cadeado p {
 @include tipo-1(14);
@@ -171,6 +195,17 @@ grid-column: 1 / -1;
 .cadeado img{
 margin-right: 10px;
 }
+.container-plano {
+@include d(f) {
+max-width: 1460px;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+padding-right: 8px;
+padding-left: 8px;
+grid-row: 1;
+}
+} 
 .plano-bg {
 background: $branco-0;
 width: 430px;
@@ -178,6 +213,10 @@ height: 580px;
 border-radius: 5px;
 z-index: 0;
 margin-bottom: 30px;
+@include d(m) {
+max-width: 290px;
+height: 531px;
+}
 }
 .plano {
 display: grid;
@@ -191,6 +230,9 @@ position: relative;
 padding: 37px 30px 20px 0px;
 grid-column: 1 / -1;
 @include tipo-1(18);
+@include d(m) {
+padding: 0px 30px 20px 0px;
+}
 }
 .plano h2:last-child {
 padding: 37px 30px 43px 30px;
@@ -206,6 +248,9 @@ align-items: center;
 padding: 10px 6px;
 font-weight: 600;
 @include tipo-1(18);
+@include d(m) {
+padding: 10px 5px;
+}
 }
 .plano input{
 opacity: 0;
@@ -225,6 +270,9 @@ margin-right: 5px;
 border: 1px solid $azul-1;
 border-radius: 50%;
 justify-self: end;
+@include d(m) {
+display: none;
+}
 }
 .plano input:checked + label::before {
 border-color: $cor-0;
@@ -239,6 +287,9 @@ display: inline-block;
 width: 220px;
 height: 336px;
 position: absolute;
+@include d(f) {
+display: none;
+}
 }
 .faixa-infantil {
 display: none;
@@ -262,6 +313,10 @@ background: $cor-0;
 width: 370px;
 height: 374px;
 border-radius: 5px;
+@include d(m) {
+max-width: 270px;
+height: 380px;
+}
 }
 .input-infantil {
 border-left: 2px solid $branco-0;
@@ -293,6 +348,9 @@ display: block;
 width: 220px;
 height: auto;
 padding: 0px 80px 0px 69px;
+@include d(m) {
+padding: 0px 30px;
+}
 }
 .faixa-infantil .vantagens::after {
 content: "";
@@ -303,6 +361,9 @@ width: 231px;
 height: 2px;
 margin-top: 25px;
 background: $branco-0;
+@include d(m) {
+width: 210px;
+}
 }
 .faixa-infantil .vantagens::before {
 content: "";
@@ -313,6 +374,9 @@ width: 231px;
 height: 2px;
 margin-bottom: 25px;
 background: $branco-0;
+@include d(m) {
+width: 210px;
+}
 }
 .faixa-infantil .vantagens li::before {
 display: inline-block;
@@ -330,6 +394,9 @@ padding-top: 25px;
 .faixa-infantil .preco-aula {
 width: 130px;
 padding: 20px 199px 0px 69px;
+@include d(m) {
+padding: 20px 30px;
+}
 }
 .faixa-infantil .preco-aula p{
 @include tipo-1(18)
@@ -339,62 +406,3 @@ padding: 20px 199px 0px 69px;
 #profissional:checked ~ #faixa-profissional {
 display: block;
 }
-@include d(f) {
-.container-plano {
-max-width: 1460px;
-box-sizing: border-box;
-margin-left: auto;
-margin-right: auto;
-padding-right: 8px;
-padding-left: 8px;
-grid-row: 1;
-}
-.plano::before {
-display: none;
-}
-} 
-@include d(m) {
-.matricule-se-bg {
-height: auto;
-gap: 50px;
-}
-.matricule-se-bg h1{
-font-size: 2.5rem;
-padding: 20px;
-}
-.cadeado {
-margin-bottom: 0px;
-}
-.plano label::before {
-display: none;
-}
-.plano label {
-padding: 10px 5px;
-}
-.pagamento label::before {
-display: none;
-}
-.plano-bg {
-max-width: 290px;
-height: 531px;
-}
-.plano h2:first-child {
-padding: 0px 30px 20px 0px;
-}
-.plano .faixa-infantil {
-max-width: 270px;
-height: 380px;
-}
-.faixa-infantil .vantagens{
-padding: 0px 30px;
-}
-.faixa-infantil .vantagens::after {
-width: 210px;
-}
-.faixa-infantil .vantagens::before {
-width: 210px;
-}
-.faixa-infantil .preco-aula {
-padding: 20px 30px;
-}
-} 

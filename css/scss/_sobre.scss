@@ -14,6 +14,10 @@ margin-bottom: 90px;
 max-width: 570px;
 height: 671px;
 object-fit: cover;
+@include d(m) {
+  max-width: 100%;
+  height: 671px;
+  }
 }
 .sobre picture .imagem-1 {
 max-width: 540px;
@@ -21,11 +25,19 @@ height: 240px;
 object-fit: cover;
 margin-top: -100px;
 padding-bottom: 40px;
+@include d(m) {
+  max-width: 100%;
+  height: 240px;
+  }
 }
 .sobre-aulas h1 {
 max-width: 454px;
 padding-bottom: 40px;
 @include tipo-2(72);
+@include d(m) {
+  max-width: 100%;
+  font-size: 2.5rem;
+  }
 }
 .icones {
 display: flex;
@@ -36,6 +48,9 @@ align-items: center;
 padding: 20px 0px 20px 0px;
 width: 470px;
 border-top: 2px solid $branco-0;
+@include d(m) {
+  width: 100%;
+  }
 }
 .icones:last-child {
 border-bottom: 2px solid $branco-0;
@@ -43,14 +58,24 @@ border-bottom: 2px solid $branco-0;
 .icones img {
 width: 55.48px;
 height: 64px;
+@include d(m) {
+  width: 35px;
+  height: 35px;
+  }
 }
 .icones p {
 @include tipo-1(24);
+@include d(m) {
+  font-size: 1rem;
+  }
 }
 .sobre-aulas .paragrafos {
 padding-top: 30px;
 max-width: 470px;
 @include tipo-1(18);
+@include d(m) {
+  max-width: 100%;
+  }
 }
 .sobre-aulas .paragrafos P + p {
 padding-top: 30px;
@@ -91,32 +116,4 @@ background: $azul-1;
 margin-right: 4px;
 margin-top: 4px;
 margin-bottom: 4px;
-}
-
-@include d(m) {
-.sobre picture .imagem-0 {
-max-width: 100%;
-height: 671px;
-}
-.sobre picture .imagem-1 {
-max-width: 100%;
-height: 240px;
-}
-.sobre-aulas h1 {
-max-width: 100%;
-font-size: 2.5rem;
-}
-.icones {
-width: 100%;
-}
-.icones p{
-font-size: 1rem;
-}
-.icones img {
-width: 35px;
-height: 35px;
-}
-.sobre-aulas .paragrafos {
-max-width: 100%;
-}
 }

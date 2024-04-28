@@ -11,6 +11,10 @@ justify-content: space-between;
 align-items: center;
 align-items: center;
 height: 30px;
+@include d(m) {
+  height: auto;
+  padding: 5px;
+  }
 }
 .cabecalho {
 display: flex;
@@ -19,6 +23,10 @@ justify-content: space-between;
 align-items: center;
 height: 60px;
 width: 100%;
+@include d(m) {
+  height: auto;
+  padding: 5px;
+  }
 }
 .cabecalho .menu {
 display: flex;
@@ -52,17 +60,4 @@ background: $vermelho-1;
 display: block; 
 transition: 0.3s;
 position: absolute; /* Realinhando ao centro */
-}
-@include d(m) {
-.cabecalho {
-height: auto;
-}
-.menu-topo h2{
-height: auto;
-padding: 5px;
-}
-.cabecalho {
-height: auto;
-padding: 5px;
-}
 }

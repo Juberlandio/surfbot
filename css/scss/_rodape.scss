@@ -10,15 +10,15 @@ justify-content: space-between;
 align-items: center;
 gap: 40px;
 padding: 45px;
+@include d(m) {
+  text-align: center;
+  }
 }
 .rodape h3 {
   @include tipo-1(18);
 }
-@include d(m) {
-.rodape {
-text-align: center;
-}
 .rodape img {
-display: none;
-}
+  @include d(m) {
+  display: none;
+  }
 }
