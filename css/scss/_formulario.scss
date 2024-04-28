@@ -35,7 +35,7 @@ border: 0px;
 outline: none;
 background: $cor-2;
 }
-@media (max-width: 1000px) {
+@include d(f) {
 .form-1 {
 grid-template-columns: 1fr;
 gap: 40px;

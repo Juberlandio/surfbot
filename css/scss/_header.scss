@@ -53,7 +53,7 @@ display: block;
 transition: 0.3s;
 position: absolute; /* Realinhando ao centro */
 }
-@media (max-width: 600px) {
+@include d(m) {
 .cabecalho {
 height: auto;
 }

@@ -109,7 +109,7 @@ width: 220px;
 height: 336px;
 position: absolute;
 }
-@media (max-width: 800px) {
+@include d(t) {
 .contato-bg h1 {
 font-size: 2.5rem;
 }

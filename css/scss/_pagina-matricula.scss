@@ -339,7 +339,7 @@ padding: 20px 199px 0px 69px;
 #profissional:checked ~ #faixa-profissional {
 display: block;
 }
-@media (max-width: 1000px) {
+@include d(f) {
 .container-plano {
 max-width: 1460px;
 box-sizing: border-box;
@@ -353,7 +353,7 @@ grid-row: 1;
 display: none;
 }
 } 
-@media (max-width: 600px) {
+@include d(m) {
 .matricule-se-bg {
 height: auto;
 gap: 50px;

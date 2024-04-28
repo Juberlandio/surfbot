@@ -73,7 +73,7 @@ height: 50px;
 .item-introducao img {
 margin-left: 40px;
 }
-@media (max-width: 600px) {
+@include d(m) {
 .introducao-container {
 justify-content: center;
 align-items: end;

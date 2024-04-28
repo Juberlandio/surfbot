@@ -1,6 +1,6 @@
 $cor-0: #ffffff;
-$cor-1: #FCFCFC;
-$cor-2: #EDEDED;
+$cor-1: #fcfcfc;
+$cor-2: #ededed;
 $cor-3: #cccccc;
 $cor-4: #b2b2b2;
 $cor-5: #9c9c9c;
@@ -12,42 +12,54 @@ $cor-10: #2e2e2e;
 $cor-11: #1a1a1a;
 $cor-12: #0e0e0e;
 $cor-13: #000000;
-$azul-0: #269BFF;
-$azul-1: #1188EE;
-$azul-2: #0467CC; 
-$branco-0: #EFF4F9; 
-$branco-1: #BBCCDD; 
-$branco-2: #99AABB; 
-$cinza-0: #667788; 
-$cinza-1: #445566; 
-$cinza-2: #17222D; 
-$vermelho-0: #FF3726; 
-$vermelho-1: #EE2211; 
-$vermelho-2: #D91504; 
-
-
+$azul-0: #269bff;
+$azul-1: #1188ee;
+$azul-2: #0467cc;
+$branco-0: #eff4f9;
+$branco-1: #bbccdd;
+$branco-2: #99aabb;
+$cinza-0: #667788;
+$cinza-1: #445566;
+$cinza-2: #17222d;
+$vermelho-0: #ff3726;
+$vermelho-1: #ee2211;
+$vermelho-2: #d91504;
 
 // Tipografia
 @mixin tipo-1($tamanho) {
-	font-family: "Nunito", sans-serif;
-	@if $tamanho == 14 {
-		font-size: 14px;
-		line-height: 1;
-		font-weight: 500;
-	}
-	@else if $tamanho == 18  {
-		font-size: 18px;
-		line-height: 1.3;
-	}
-	@else if $tamanho == 24 {
-		font-size: 24px;
-		line-height: 1.3;
-	}
+  font-family: 'Nunito', sans-serif;
+  @if $tamanho == 14 {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+  } @else if $tamanho == 18 {
+    font-size: 18px;
+    line-height: 1.3;
+  } @else if $tamanho == 24 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 @mixin tipo-2($tamanho) {
-	font-family: "Alice", sans-serif;
-	@if $tamanho == 72 {
-		font-size: 72px;
-		font-weight: 400;
-	}
+  font-family: 'Alice', sans-serif;
+  @if $tamanho == 72 {
+    font-size: 72px;
+    font-weight: 400;
+  }
+}
+
+@mixin d($dispositivo) {
+  @if $dispositivo == f {
+    @media (max-width: 1000px) {
+      @content;
+    }
+	} @else if $dispositivo == t {
+    @media (max-width: 800px) {
+      @content;
+    }
+  } @else if $dispositivo == m {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
 }

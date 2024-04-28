@@ -14,7 +14,7 @@ padding: 45px;
 .rodape h3 {
   @include tipo-1(18);
 }
-@media (max-width: 600px) {
+@include d(m) {
 .rodape {
 text-align: center;
 }

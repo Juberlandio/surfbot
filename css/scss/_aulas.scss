@@ -148,7 +148,7 @@ padding-left: 20px;
 padding-right: 20px;
 @include tipo-1(18);
 }
-@media (max-width:600px) {
+@include d(m) {
 .aulas-bg h1 {
 font-size: 2.5rem;
 }
