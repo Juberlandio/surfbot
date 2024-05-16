@@ -64,7 +64,6 @@ font-weight: 700;
 }
 .faixa .vantagens{
 display: block;
-width: 220px;
 height: auto;
 padding: 0px 80px 0px 69px;
 @include d(m) {
@@ -113,7 +112,6 @@ border: 2px solid $azul-0;
 padding-top: 25px;
 }
 .faixa .preco-aula {
-width: 102px;
 padding: 15px 199px 0px 69px;
 @include tipo-1(14);
 @include d(m) {
@@ -131,7 +129,7 @@ width: 230px;
 height: 40px;
 background: $cinza-1;
 border-radius: 5px;
-z-index: 3;
+
 transition: 0.3s;
 @include d(m) {
   max-width: 130px;
