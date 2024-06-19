@@ -27,6 +27,7 @@ $vermelho-2: #d91504;
 
 
 $f-device: 1200px;
+$s-device: 1000px;
 $t-device: 800px;
 $m-device: 600px;
 
@@ -56,6 +57,10 @@ $m-device: 600px;
 @mixin d($dispositivo) {
   @if $dispositivo == f {
     @media (max-width: $f-device) {
+      @content;
+    }
+  } @else if $dispositivo == s {
+    @media (max-width: $s-device) {
       @content;
     }
 	} @else if $dispositivo == t {
