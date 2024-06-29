@@ -16,6 +16,44 @@
 </head>
 
 <body>
+  <section class="contador">
+    <div>
+      <h1>Black Friday up to 50% OFF</h1>
+    </div>
+    <div class="countdown-container">
+      <div class="time-box">
+        <span id="days" class="countdown-number">
+          <span class="current">00</span>
+          <span class="next">00</span>
+        </span>
+        <span class="label">Dias</span>
+      </div>
+      <div class="time-box">
+        <span id="hours" class="countdown-number">
+          <span class="current">00</span>
+          <span class="next">00</span>
+        </span>
+        <span class="label">Horas</span>
+      </div>
+      <div class="time-box">
+        <span id="minutes" class="countdown-number">
+          <span class="current">00</span>
+          <span class="next">00</span>
+        </span>
+        <span class="label">Minutos</span>
+      </div>
+      <div class="time-box">
+        <span id="seconds" class="countdown-number">
+          <span class="current">00</span>
+          <span class="next">00</span>
+        </span>
+        <span class="label">Segund.</span>
+      </div>
+    </div>
+    <div data-menu="suave">
+      <a href="#aulas"><button class="botao">Matricule-se</button></a>
+    </div>
+  </section>
   <header class="cabecalho-bg">
     <div class="menu-topo font-1-s cor-0 ">
       <div class="container">
@@ -25,17 +63,17 @@
     <div class="header-container">
       <div class="cabecalho container">
         <picture>
-          <a href="index.html"><img src="./assents/svg/surfbot-logo.svg" alt="Logo Surfbot"></a>
+          <a href="index.html"><img src="./assets/svg/surfbot-logo.svg" alt="Logo Surfbot"></a>
         </picture>
         <nav aria-label="primária" data-menu="suave">
           <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
           <ul data-menu="list" class="menu dropdown-menu font-1-m cor-0">
             <li><a href="#praia">Praia</a></li>
-            <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
+            <li><img src="./assets/svg/Ellipse.svg" alt=""></li>
             <li><a href="#aulas">Aulas</a></li>
-            <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
+            <li><img src="./assets/svg/Ellipse.svg" alt=""></li>
             <li><a href="#contato">Contato</a></li>
-            <li><img src="./assents/svg/Ellipse.svg" alt=""></li>
+            <li><img src="./assets/svg/Ellipse.svg" alt=""></li>
             <li class="matricula"><a href="matricule-se.html?tipo=infantil&tipos=cartao">Matricule-se</a></li>
           </ul>
         </nav>
@@ -51,7 +89,7 @@
             <input class="font-1-m nome cor-13" type="text" placeholder="Nome">
             <ul>
               <li class="item-introducao">
-                <a class="item-introducao-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-introducao-img" src="./assents/svg/Vector.svg" alt=""></a>
+                <a class="item-introducao-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-introducao-img" src="./assets/svg/Vector.svg" alt=""></a>
               </li>
             </ul>
           </form>
@@ -63,8 +101,8 @@
         <div class="sobre-mapa">
           <div>
             <picture class="container">
-              <img class="imagem-0" src="./assents/img/foto-galeria.jpg" alt="">
-              <img class="imagem-1 center" src="./assents/img/mapa.jpg" alt="">
+              <img class="imagem-0" src="./assets/img/foto-galeria.jpg" alt="">
+              <img class="imagem-1 center" src="./assets/img/mapa.jpg" alt="">
             </picture>
           </div>
           <div class="rotas">
@@ -78,15 +116,15 @@
           <div>
             <h1 class="font-1-xxl cor-p9"><span class="cor-p1">Aulas</span> em uma das melhores praias do <span class="cor-p1">Rio</span>.</h1>
             <div class="icones">
-              <img src="./assents/svg/sandalhas.svg" alt="">
+              <img src="./assets/svg/sandalhas.svg" alt="">
               <p class="font-1-xl cor-p8">8km de costa</p>
             </div>
             <div class="icones">
-              <img src="./assents/svg/coco.svg" alt="">
+              <img src="./assets/svg/coco.svg" alt="">
               <p class="font-1-xl cor-p8">Restaurantes à beira mar</p>
             </div>
             <div class="icones">
-              <img src="./assents/svg/boia.svg" alt="">
+              <img src="./assets/svg/boia.svg" alt="">
               <p class="font-1-xl cor-p8">Salva-vidas a cada 300m</p>
             </div>
           </div>
@@ -98,12 +136,12 @@
       </div>
     </section>
     <section class="aulas-bg" aria-label="Aulas" data-anime="scroll" id="aulas">
-      <img class="imagem-ondas center" src="assents/svg/ondas.svg" alt="">
+      <img class="imagem-ondas center" src="assets/svg/ondas.svg" alt="">
       <h1 class="font-1-xxl cor-p8 center">Aulas</h1>
       <div class="aulas container">
         <div class="faixa">
           <div class="icone-logo">
-            <img class="center" src="assents/svg/surfbot-icon.svg" alt="">
+            <img class="center" src="assets/svg/surfbot-icon.svg" alt="">
           </div>
           <h2 class="font-1-xl cor-p8 center">Infantil</h2>
           <ul class="vantagens font-1-s cor-p8">
@@ -117,13 +155,13 @@
           </div>
           <ul class="button-matricule-se">
             <li class="item-aulas center">
-              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assents/svg/Vector.svg" alt=""></a>
+              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assets/svg/Vector.svg" alt=""></a>
             </li>
           </ul>
         </div>
         <div class="faixa">
           <div class="icone-logo">
-            <img class="center" src="assents/svg/duasPranchas.svg" alt="">
+            <img class="center" src="assets/svg/duasPranchas.svg" alt="">
           </div>
           <h2 class="font-1-xl cor-p8 center">Adulto</h2>
           <ul class="vantagens font-1-s cor-p8">
@@ -137,13 +175,13 @@
           </div>
           <ul class="button-matricule-se">
             <li class="item-aulas center">
-              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assents/svg/Vector.svg" alt=""></a>
+              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assets/svg/Vector.svg" alt=""></a>
             </li>
           </ul>
         </div>
         <div class="faixa">
           <div class="icone-logo">
-            <img class="center" src="assents/svg/tresPranchas.svg" alt="">
+            <img class="center" src="assets/svg/tresPranchas.svg" alt="">
           </div>
           <h2 class="font-1-xl cor-p8 center">Profissional</h2>
           <ul class="vantagens font-1-s cor-p8">
@@ -157,7 +195,7 @@
           </div>
           <ul class="button-matricule-se">
             <li class="item-aulas center">
-              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assents/svg/Vector.svg" alt=""></a>
+              <a class="item-aulas-a font-1-m cor-0" href="matricule-se.html?tipo=infantil&tipos=cartao" target="_blank">Matricule-se<img class="item-aulas-img" src="./assets/svg/Vector.svg" alt=""></a>
             </li>
           </ul>
         </div>
@@ -194,7 +232,7 @@
             </div>
             <ul class="/">
               <li class="button-formulario">
-                <a class="button-formulario-a font-1-m cor-0" href="https://www.linkedin.com/in/juberlandiooliveira/" target="_blank">Enviar Mensagem<img class="button-formulario-img" src="./assents/svg/Vector.svg" alt=""></a>
+                <a class="button-formulario-a font-1-m cor-0" href="https://www.linkedin.com/in/juberlandiooliveira/" target="_blank">Enviar Mensagem<img class="button-formulario-img" src="./assets/svg/Vector.svg" alt=""></a>
               </li>
             </ul>
           </form>
@@ -206,7 +244,7 @@
             <p class="font-1-s cor-p8">Rio de Janeiro - RJ</p>
             <p class="font-1-s cor-p8">Procure a barraca vermelha</p>
             <li class="item-contato">
-              <a class="item-contato-a font-1-s cor-p8" href="https://www.linkedin.com/in/juberlandiooliveira/" target="_blank">VER NO MAPA<img class="item-contato-img" src="./assents/svg/vetor-contato.svg" alt=""></a>
+              <a class="item-contato-a font-1-s cor-p8" href="https://www.linkedin.com/in/juberlandiooliveira/" target="_blank">VER NO MAPA<img class="item-contato-img" src="./assets/svg/vetor-contato.svg" alt=""></a>
             </li>
           </div>
           <div class="item-2">        
@@ -228,7 +266,7 @@
   <section class="rodape-bg" aria-label="Rodape">
    <div class="rodape container">
       <h3 class="font-1-m cor-0">Surfbot 2017 - Alguns direitos reservados..</h3>
-      <img src="./assents/svg/surfbot-icon-white.svg" alt="">
+      <img src="./assets/svg/surfbot-icon-white.svg" alt="">
    </div>
   </section>
   <script type="module" src="js/script.js"></script>

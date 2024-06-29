@@ -1,0 +1,75 @@
+
+.contador {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+background: #211E54;
+width: 100%;
+background-image: url('img/BG.jpg');
+}
+
+.contador h1 {
+font-size: 1rem;
+color: #ffffff; 
+padding: 10px;
+}
+
+.countdown-container {
+display: flex;
+gap: 10px;
+}
+
+.time-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5px;
+border-radius: 10px;
+}
+
+.time-box .label {
+font-size: 0.7rem;
+margin-top: 5px;
+color: #fff;
+}
+
+#days, #hours, #minutes, #seconds {
+background-color: #fff;
+color: #ED3247;
+padding: 5px;
+border-radius: 5px;
+font-weight: 700;
+}
+
+.botao {
+background: #ED3247;
+padding: 8px 25px;
+color: #fff;
+font: 500 0.8rem/1.5 "Roboto", sans-serif;
+border-radius: 3px;
+transition: 0.3s;
+border: none;
+}
+
+.botao:hover {
+margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+.contador h1 {
+font-size: 1rem;
+color: #ffffff; 
+padding: 5px;
+}
+.contador {
+flex-direction: column;
+gap: 0px;
+}
+.botao {
+display: none;
+}
+}
