@@ -60,6 +60,9 @@ margin-bottom: 8px;
 }
 
 @media (max-width: 600px) {
+.contador {
+  background-image: url('../assets/img/BGmobile.jpg');
+}
 .contador h1 {
 font-size: 1rem;
 color: #ffffff; 
